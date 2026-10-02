@@ -1,0 +1,29 @@
+{
+  "telegram_pin": "f2908b14133bbffbf7ab04f641ecb5bfaf533242",
+  "source_lock_sha256": "cedfd27eff91326c4fbb3aea684d78b5b68f95db64b246514a815123d0a9da72",
+  "fixture_source_sha256": "c6710171222472632ec93c43b0cefad100c6d36885ab515f764fe2d5c0318941",
+  "artifacts": {
+    "feedback-debug.apk": {
+      "sha256": "d7fbbaa4359c2a235f01b19a2d204a8428cdd3f4942472757dfa539486d04de3",
+      "bytes": 238467
+    },
+    "attachment-debug.apk": {
+      "sha256": "c5126c61a3f70ed8a3707e99511d50ae3d98e5aa03e4f472c28d0177ab932349",
+      "bytes": 182734
+    },
+    "markup-engine-debug.aar": {
+      "sha256": "089f5ab3971d5df34bc6718103a4617ac2351241ac28b41484f09cf0d3ffcc26",
+      "bytes": 152475
+    }
+  },
+  "runtime": "API26 x86 software emulator, 1080x1920, 420dpi",
+  "fixture": {
+    "passed": 272,
+    "failed": 0,
+    "unsupported": 2,
+    "pixel_tolerance": 0
+  },
+  "ordinary_result_evidence": "Callback metadata and screenshot preview; internal PNG decode equality check. Ordinary PNG byte arrays were not separately extracted.",
+  "scope": "Recorded test binary identities only; these APK/AAR files are not distributed in this source repository. Flat PNG <=2048 pixels each side; no editable project/redo/process-recovery promise.",
+  "publication_host_source_delta": "The recorded APKs precede the equivalent non-View PNG helper extraction in both hosts. See publication-source-delta.json; engine and fixture source remain exact."
+}

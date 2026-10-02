@@ -1,0 +1,74 @@
+name: Source verification
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      compile:
+        description: Compile and lint both roots using the preinstalled JDK and Android SDK
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  source:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Check out exact revision
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - name: Verify reviewed source and publication boundary
+        run: |
+          python3 --version
+          python3 tools/verify-publication.py
+          python3 tools/verify-source-closure.py
+      - name: Check shell script syntax
+        run: bash -n gradlew standalone-consumer/gradlew tools/test-host-core.sh tools/build-independent-consumer.sh
+
+  compile-lint:
+    if: github.event_name == 'workflow_dispatch' && inputs.compile
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - name: Check out exact revision
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - name: Use existing JDK 21 and require installed SDK 35
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -x "$JAVA_HOME_21_X64/bin/java"
+          test -f "$ANDROID_HOME/platforms/android-35/android.jar"
+          test -x "$ANDROID_HOME/build-tools/35.0.0/aapt2"
+          test -f "$ANDROID_HOME/build-tools/35.0.0/source.properties"
+          grep -Eq '^Pkg.Revision *= *35\.0\.0$' "$ANDROID_HOME/build-tools/35.0.0/source.properties"
+          echo "JAVA_HOME=$JAVA_HOME_21_X64" >> "$GITHUB_ENV"
+          echo "$JAVA_HOME_21_X64/bin" >> "$GITHUB_PATH"
+          "$JAVA_HOME_21_X64/bin/java" -version
+      - name: Verify frozen source before compilation
+        run: python3 tools/verify-publication.py
+      - name: Compile and lint feedback root
+        run: |
+          bash gradlew --no-daemon --max-workers=1 \
+            -Dorg.gradle.jvmargs='-Xmx1g -Dfile.encoding=UTF-8' \
+            -Pandroid.builder.sdkDownload=false \
+            :engine:compileDebugJavaWithJavac :smoke-host:compileDebugJavaWithJavac \
+            :engine:lintDebug :smoke-host:lintDebug
+      - name: Compile and lint independent attachment root
+        working-directory: standalone-consumer
+        run: |
+          bash gradlew --no-daemon --max-workers=1 \
+            -Dorg.gradle.jvmargs='-Xmx1g -Dfile.encoding=UTF-8' \
+            -Pandroid.builder.sdkDownload=false \
+            :engine:compileDebugJavaWithJavac :app:compileDebugJavaWithJavac \
+            :engine:lintDebug :app:lintDebug
+      - name: Run deterministic host-core checks
+        run: bash tools/test-host-core.sh

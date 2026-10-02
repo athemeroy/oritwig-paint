@@ -1,0 +1,321 @@
+{
+  "revision_date": "2026-10-02",
+  "scope": "Exact non-engine distribution inputs. Engine and its independent copy are covered by module-source-lock.json. This manifest excludes itself to avoid a circular digest. Roles describe provenance, not exclusive ownership of generated tooling or retained notices.",
+  "files": {
+    ".github/workflows/source-verification.yml": {
+      "sha256": "11da5117cce69e1d87d0aa7429ac3b101dc72ccf4fa3cac1bcf42425484e57db",
+      "bytes": 2856,
+      "role": "authored verification/build helper or publication CI"
+    },
+    ".gitignore": {
+      "sha256": "49c913e8e1b4b841fa34f19b265cd51fefb0b043a9b1e3d30193fa43616fe7d6",
+      "bytes": 201,
+      "role": "authored documentation or provenance metadata"
+    },
+    "API.md": {
+      "sha256": "d4003562955d85d145174e5907e83302ec265ddad4f64695f1310f1790ef1543",
+      "bytes": 4194,
+      "role": "authored documentation or provenance metadata"
+    },
+    "BUILD.md": {
+      "sha256": "0a68789bdd910524021050f966b93b1dbc0ea8d1de5474742fd3dd09250138b1",
+      "bytes": 3986,
+      "role": "authored documentation or provenance metadata"
+    },
+    "CHECKS.md": {
+      "sha256": "67408eaa170b3f06d741c4db157fda05ed940ce3a8a12c676abac7daeab7bfd8",
+      "bytes": 4164,
+      "role": "authored documentation or provenance metadata"
+    },
+    "LICENSE": {
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149,
+      "role": "retained license or attribution notice"
+    },
+    "NOTICE": {
+      "sha256": "b89746ef9b37682d0c4d017d1d6b6e2f709b4a43b68f56f14ee48bcf29dadf21",
+      "bytes": 2771,
+      "role": "retained license or attribution notice"
+    },
+    "README.md": {
+      "sha256": "a6632e0ff5a4acae2f5cf85e3ae3afda10f1d032d6e9274459bdd27c607f0083",
+      "bytes": 4192,
+      "role": "authored documentation or provenance metadata"
+    },
+    "build.gradle": {
+      "sha256": "43169dc3e1d86901a89c100898f3bb03727d808e2f5e2710398282b57c42f73d",
+      "bytes": 124,
+      "role": "authored frozen Gradle build configuration"
+    },
+    "docs/media/README.md": {
+      "sha256": "9da432b7826e7f0c5a0353d9951f0c893f1cff99ee8221efedf0a66073313f8f",
+      "bytes": 2661,
+      "role": "authored documentation or provenance metadata"
+    },
+    "docs/media/attachment-annotation.png": {
+      "sha256": "134bf79b06998c65cd95210ce4456cad2c6638df21015db7b1245ec205d58c80",
+      "bytes": 122579,
+      "role": "actual workflow screenshot or edited real-screenshot walkthrough"
+    },
+    "docs/media/attachment-cancel-kept.png": {
+      "sha256": "ae3dd206419646f87a606bd47042472fad6559a915f892ec03e2c24d1c332ca2",
+      "bytes": 126840,
+      "role": "actual workflow screenshot or edited real-screenshot walkthrough"
+    },
+    "docs/media/attachment-original.png": {
+      "sha256": "4b9fe52afec9e734fe3a989e4f1f42350a9e97a7f9c144caac4c933a19a08029",
+      "bytes": 121036,
+      "role": "actual workflow screenshot or edited real-screenshot walkthrough"
+    },
+    "docs/media/attachment-returned.png": {
+      "sha256": "b3adcfa2dd8a0e443e2926e0254732de928fe889416b616b473b0f1412e962aa",
+      "bytes": 138200,
+      "role": "actual workflow screenshot or edited real-screenshot walkthrough"
+    },
+    "docs/media/feedback-annotation.png": {
+      "sha256": "1fb83c07070121cb9f96362270d8d872275c97d68ab6846e17a9234ca2cd5e13",
+      "bytes": 169651,
+      "role": "actual workflow screenshot or edited real-screenshot walkthrough"
+    },
+    "docs/media/feedback-returned.png": {
+      "sha256": "1e10cec98dee248f03df1db55c09490303363a816ad22d41038e6b69d9f70baa",
+      "bytes": 161496,
+      "role": "actual workflow screenshot or edited real-screenshot walkthrough"
+    },
+    "docs/media/media-provenance.json": {
+      "sha256": "e404bf86d078d7641644767ca45363a2c7c0cda06bd48d58403f9c32ac33c116",
+      "bytes": 2723,
+      "role": "authored documentation or provenance metadata"
+    },
+    "docs/media/paint-workflow-cover.png": {
+      "sha256": "9ba336e899f2d92fc51d2739b6f21fae5a28f6631a357c5b2d14e80f2dfd7cec",
+      "bytes": 337416,
+      "role": "actual workflow screenshot or edited real-screenshot walkthrough"
+    },
+    "gradle/wrapper/gradle-wrapper.jar": {
+      "sha256": "2db75c40782f5e8ba1fc278a5574bab070adccb2d21ca5a6e5ed840888448046",
+      "bytes": 43583,
+      "role": "upstream-generated Gradle build tooling; original notices retained"
+    },
+    "gradle/wrapper/gradle-wrapper.properties": {
+      "sha256": "75552fa174ecea82e34e91056a42903eebb577c47b49eded67e7023f2102a93f",
+      "bytes": 342,
+      "role": "upstream-generated Gradle build tooling; original notices retained"
+    },
+    "gradle.properties": {
+      "sha256": "6da8fcb359aadd80032c9d50bf3dd599b0658274da5b5ac47a9c283e6d221560",
+      "bytes": 125,
+      "role": "authored frozen Gradle build configuration"
+    },
+    "gradlew": {
+      "sha256": "a3648413b47ef77af21d5ebc36c687c7d103aaef3e17f33de7d4f080a6f300a3",
+      "bytes": 8762,
+      "role": "upstream-generated Gradle build tooling; original notices retained"
+    },
+    "gradlew.bat": {
+      "sha256": "57931b17dd228e5c24dac90e815d0bf82477e831a4618dfab4136f5446b42a9f",
+      "bytes": 2966,
+      "role": "upstream-generated Gradle build tooling; original notices retained"
+    },
+    "provenance/LICENSE-telegram-GPL2.txt": {
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+      "bytes": 18092,
+      "role": "retained license or attribution notice"
+    },
+    "provenance/README.md": {
+      "sha256": "e6ab5c84045128812460eddbc253924a78a411858eb83e45d44eb8a6f9c98785",
+      "bytes": 3204,
+      "role": "authored documentation or provenance metadata"
+    },
+    "provenance/license-review/REVIEW.md": {
+      "sha256": "23b355c68e772f9bf9b9b814721171503524813218414c14ffe867aee6cae8ca",
+      "bytes": 3309,
+      "role": "authored documentation or provenance metadata"
+    },
+    "provenance/module-source-lock.json": {
+      "sha256": "cedfd27eff91326c4fbb3aea684d78b5b68f95db64b246514a815123d0a9da72",
+      "bytes": 4889,
+      "role": "authored documentation or provenance metadata"
+    },
+    "provenance/source-ledger.json": {
+      "sha256": "869c421a49bf82ae2331f205bf00873d2ac41530eff313e61419ed5ee28d2850",
+      "bytes": 29038,
+      "role": "authored documentation or provenance metadata"
+    },
+    "provenance/tested-artifacts.json": {
+      "sha256": "d67c4a0692a576defe38c4459572e9ad8076e8566663158b5875050fd21dcf80",
+      "bytes": 1440,
+      "role": "authored documentation or provenance metadata"
+    },
+    "settings.gradle": {
+      "sha256": "abb4e71bf4a18fc6bfcebbf55435351071dc5d53c4ec38d2f282a66f4a7ea78c",
+      "bytes": 297,
+      "role": "authored frozen Gradle build configuration"
+    },
+    "smoke-host/README.md": {
+      "sha256": "d05a91fe66f4255fea494bce71b52f53fa4be8b09f9bde6b9b1a258fc35135db",
+      "bytes": 3290,
+      "role": "authored documentation or provenance metadata"
+    },
+    "smoke-host/build.gradle": {
+      "sha256": "7c684dbfdb20fae97eb24bd83865f9a0299a21077edc3652cd3afb5a10f3cbef",
+      "bytes": 420,
+      "role": "authored frozen Gradle build configuration"
+    },
+    "smoke-host/src/main/AndroidManifest.xml": {
+      "sha256": "598ba75e70fd7b37157e60d78adb96ba3f996d21a426a8a0751abbb7789da5d1",
+      "bytes": 793,
+      "role": "authored platform-only example host or regression fixture"
+    },
+    "smoke-host/src/main/java/dev/oritwig/markup/proof/AnnotationEditor.java": {
+      "sha256": "7b2c785c68845b690ae8f2a49337f73c48e835ddae0c34293e3436d69d2548dd",
+      "bytes": 16623,
+      "role": "authored platform-only example host or regression fixture"
+    },
+    "smoke-host/src/main/java/dev/oritwig/markup/proof/MainActivity.java": {
+      "sha256": "3679716911af37dd302e3a45ecebbe53a13119cac14c2d8988169a40aff172a2",
+      "bytes": 6988,
+      "role": "authored platform-only example host or regression fixture"
+    },
+    "smoke-host/src/main/java/dev/oritwig/markup/proof/ProofFixtureActivity.java": {
+      "sha256": "cdc940ed54ee2dd5c332f22542fa476e66fdc32141bc32926d0778e2dbef19df",
+      "bytes": 9201,
+      "role": "authored platform-only example host or regression fixture"
+    },
+    "smoke-host/src/main/java/dev/oritwig/markup/proof/WorkflowFixtureActivity.java": {
+      "sha256": "c6710171222472632ec93c43b0cefad100c6d36885ab515f764fe2d5c0318941",
+      "bytes": 46219,
+      "role": "authored platform-only example host or regression fixture"
+    },
+    "standalone-consumer/LICENSE": {
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149,
+      "role": "retained license or attribution notice"
+    },
+    "standalone-consumer/NOTICE": {
+      "sha256": "b89746ef9b37682d0c4d017d1d6b6e2f709b4a43b68f56f14ee48bcf29dadf21",
+      "bytes": 2771,
+      "role": "retained license or attribution notice"
+    },
+    "standalone-consumer/PINNED-MODULE-SOURCE.json": {
+      "sha256": "d0de390913c22c7e90a2f74956d08becb00870ae61423b519e0a2360ebd78ec6",
+      "bytes": 4630,
+      "role": "authored documentation or provenance metadata"
+    },
+    "standalone-consumer/README.md": {
+      "sha256": "8b92013489d9ace87ec232cd2def13a2ac04368fb6fb09126183fa997be2f746",
+      "bytes": 3612,
+      "role": "authored documentation or provenance metadata"
+    },
+    "standalone-consumer/app/build.gradle": {
+      "sha256": "fb266576effbfc8119799cc0e840909444285944c9269635d195c0e72d56a49c",
+      "bytes": 426,
+      "role": "authored frozen Gradle build configuration"
+    },
+    "standalone-consumer/app/src/main/AndroidManifest.xml": {
+      "sha256": "940c215d3053bce5b46ff11e1630d920e96d36f69c4c85293793f9c0092d8dbd",
+      "bytes": 623,
+      "role": "authored platform-only example host or regression fixture"
+    },
+    "standalone-consumer/app/src/main/java/dev/oritwig/markup/consumer/AnnotationEditor.java": {
+      "sha256": "ca6cdf2f9f1708dc9b0958310e56ecc3dfaef6ccfde3511930ba4fabc9350431",
+      "bytes": 16626,
+      "role": "authored platform-only example host or regression fixture"
+    },
+    "standalone-consumer/app/src/main/java/dev/oritwig/markup/consumer/MainActivity.java": {
+      "sha256": "ceee9b55b6e4b2719c4eb034b096d383078af8d72a88e84490551434a4a84392",
+      "bytes": 8375,
+      "role": "authored platform-only example host or regression fixture"
+    },
+    "standalone-consumer/build.gradle": {
+      "sha256": "43169dc3e1d86901a89c100898f3bb03727d808e2f5e2710398282b57c42f73d",
+      "bytes": 124,
+      "role": "authored frozen Gradle build configuration"
+    },
+    "standalone-consumer/gradle/wrapper/gradle-wrapper.jar": {
+      "sha256": "2db75c40782f5e8ba1fc278a5574bab070adccb2d21ca5a6e5ed840888448046",
+      "bytes": 43583,
+      "role": "upstream-generated Gradle build tooling; original notices retained"
+    },
+    "standalone-consumer/gradle/wrapper/gradle-wrapper.properties": {
+      "sha256": "75552fa174ecea82e34e91056a42903eebb577c47b49eded67e7023f2102a93f",
+      "bytes": 342,
+      "role": "upstream-generated Gradle build tooling; original notices retained"
+    },
+    "standalone-consumer/gradle.properties": {
+      "sha256": "6da8fcb359aadd80032c9d50bf3dd599b0658274da5b5ac47a9c283e6d221560",
+      "bytes": 125,
+      "role": "authored frozen Gradle build configuration"
+    },
+    "standalone-consumer/gradlew": {
+      "sha256": "a3648413b47ef77af21d5ebc36c687c7d103aaef3e17f33de7d4f080a6f300a3",
+      "bytes": 8762,
+      "role": "upstream-generated Gradle build tooling; original notices retained"
+    },
+    "standalone-consumer/gradlew.bat": {
+      "sha256": "57931b17dd228e5c24dac90e815d0bf82477e831a4618dfab4136f5446b42a9f",
+      "bytes": 2966,
+      "role": "upstream-generated Gradle build tooling; original notices retained"
+    },
+    "standalone-consumer/provenance/LICENSE-telegram-GPL2.txt": {
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+      "bytes": 18092,
+      "role": "retained license or attribution notice"
+    },
+    "standalone-consumer/settings.gradle": {
+      "sha256": "509e8bb558051891de97a1afe18b4a4fb41c238e934d6cb71318ef2c3401be5c",
+      "bytes": 293,
+      "role": "authored frozen Gradle build configuration"
+    },
+    "tests/host/android/graphics/PointF.java": {
+      "sha256": "db14548f617aaaafd57915a318fbbf79e30e459efc31b9deb83172e5c005d1e8",
+      "bytes": 198,
+      "role": "authored host-core test or minimal Android test stub"
+    },
+    "tests/host/android/graphics/RectF.java": {
+      "sha256": "823f694a0ab4910e9756626e1747f69d1d22d8cb3405a6ba835a073bb1f678de",
+      "bytes": 365,
+      "role": "authored host-core test or minimal Android test stub"
+    },
+    "tests/host/dev/oritwig/markup/core/CoreHostTest.java": {
+      "sha256": "b308c1862b8683e814482e63132165240fdc954b06bfa415c4be86332af18c99",
+      "bytes": 3085,
+      "role": "authored host-core test or minimal Android test stub"
+    },
+    "tests/host/dev/oritwig/markup/platform/Platform.java": {
+      "sha256": "c4634001e90e6a88a65ebdfac364fcb858811414648d42e844d7aefeac331d0e",
+      "bytes": 268,
+      "role": "authored host-core test or minimal Android test stub"
+    },
+    "tests/host/dev/oritwig/markup/support/DispatchQueue.java": {
+      "sha256": "79ec6b8a070daf592c2408642897eeaf9a04820ac82e3b2134368f5e938b9cb8",
+      "bytes": 150,
+      "role": "authored host-core test or minimal Android test stub"
+    },
+    "tools/build-independent-consumer.sh": {
+      "sha256": "f4fd2ed8e7d78db11ae8637b9de9c9df8078f9b47e6f9779fbf6708b7f8cdf3b",
+      "bytes": 1758,
+      "role": "authored verification/build helper or publication CI"
+    },
+    "tools/test-host-core.sh": {
+      "sha256": "a2c5bc1239b344646f08bf680c3c69b6e77e64f69e852034915ebbffb8b4e933",
+      "bytes": 342,
+      "role": "authored verification/build helper or publication CI"
+    },
+    "tools/verify-publication.py": {
+      "sha256": "9cd3aacb26f75727dff13cf0a29d5be120d07c75db1de028863c6bbb854e1508",
+      "bytes": 6411,
+      "role": "authored verification/build helper or publication CI"
+    },
+    "tools/verify-source-closure.py": {
+      "sha256": "ae907ad6f07c88c42e7f0bc87b1f67fcc5e7914eaab1b8e6039fc0ac555f7eb4",
+      "bytes": 2795,
+      "role": "authored verification/build helper or publication CI"
+    },
+    "provenance/publication-source-delta.json": {
+      "role": "authored publication-only host source delta and evidence boundary",
+      "sha256": "4fe9b961c8cf58fb6c861cf08cb328585d97f7ec2ac3803cf1b334468239d096",
+      "bytes": 1723
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-02",
+  "reason": "Host lint inferred the View member encode method as UI-thread code despite its sole call through a single-thread executor. A separate non-View helper makes the existing worker-only flow visible without lint suppression or a new dependency.",
+  "engine_changed": false,
+  "private_tested_binaries_changed": false,
+  "runtime_evidence_scope": "The recorded ordinary-device checks used the original tested host source. This extraction is a publication-source delta; subsequent compile/lint/source review is not a new ordinary-device runtime test.",
+  "files": [
+    {
+      "path": "smoke-host/src/main/java/dev/oritwig/markup/proof/AnnotationEditor.java",
+      "tested_source_sha256": "660a103f4b6174e1d02e8f4b7e8ddd32859fbbedfb1ec2f8278acba7a701def9",
+      "publication_source_sha256": "7b2c785c68845b690ae8f2a49337f73c48e835ddae0c34293e3436d69d2548dd",
+      "change": "Extract unchanged PNG compression, bounds guard, unscaled decode and exact pixel validation into a private static non-View helper. Existing encoder executor, outer catch/finally recycling and main-thread callback remain unchanged."
+    },
+    {
+      "path": "standalone-consumer/app/src/main/java/dev/oritwig/markup/consumer/AnnotationEditor.java",
+      "tested_source_sha256": "937bd80b597e55e207e2abc74393b8ff938163a97221fb4437f1b3774df22adb",
+      "publication_source_sha256": "ca6cdf2f9f1708dc9b0958310e56ecc3dfaef6ccfde3511930ba4fabc9350431",
+      "change": "Extract unchanged PNG compression, bounds guard, unscaled decode and exact pixel validation into a private static non-View helper. Existing encoder executor, outer catch/finally recycling and main-thread callback remain unchanged."
+    }
+  ]
+}

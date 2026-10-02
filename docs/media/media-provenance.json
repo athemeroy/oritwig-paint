@@ -1,0 +1,72 @@
+{
+  "scope": "Six unchanged API 26 software-emulator screenshots plus a cover that uniformly resizes two actual screenshots inside editorial framing. Not continuous recording or response-time evidence.",
+  "cover": {
+    "file": "paint-workflow-cover.png",
+    "bytes": 337416,
+    "sha256": "9ba336e899f2d92fc51d2739b6f21fae5a28f6631a357c5b2d14e80f2dfd7cec"
+  },
+  "source_captures": {
+    "ordinary-feedback--15-returned-host.png": {
+      "sha256": "1e10cec98dee248f03df1db55c09490303363a816ad22d41038e6b69d9f70baa",
+      "bytes": 161496,
+      "dimensions_px": [
+        1080,
+        1920
+      ],
+      "included_file": "feedback-returned.png"
+    },
+    "ordinary-attachment--14-labeled-returned-host.png": {
+      "sha256": "b3adcfa2dd8a0e443e2926e0254732de928fe889416b616b473b0f1412e962aa",
+      "bytes": 138200,
+      "dimensions_px": [
+        1080,
+        1920
+      ],
+      "included_file": "attachment-returned.png"
+    },
+    "ordinary-feedback--14-edited.png": {
+      "sha256": "1fb83c07070121cb9f96362270d8d872275c97d68ab6846e17a9234ca2cd5e13",
+      "bytes": 169651,
+      "dimensions_px": [
+        1080,
+        1920
+      ],
+      "included_file": "feedback-annotation.png"
+    },
+    "ordinary-attachment--02-original-attachment.png": {
+      "sha256": "4b9fe52afec9e734fe3a989e4f1f42350a9e97a7f9c144caac4c933a19a08029",
+      "bytes": 121036,
+      "dimensions_px": [
+        1080,
+        1920
+      ],
+      "included_file": "attachment-original.png"
+    },
+    "ordinary-attachment--13-label-edited.png": {
+      "sha256": "134bf79b06998c65cd95210ce4456cad2c6638df21015db7b1245ec205d58c80",
+      "bytes": 122579,
+      "dimensions_px": [
+        1080,
+        1920
+      ],
+      "included_file": "attachment-annotation.png"
+    },
+    "ordinary-attachment--16-final-cancel-return.png": {
+      "sha256": "ae3dd206419646f87a606bd47042472fad6559a915f892ec03e2c24d1c332ca2",
+      "bytes": 126840,
+      "dimensions_px": [
+        1080,
+        1920
+      ],
+      "included_file": "attachment-cancel-kept.png"
+    }
+  },
+  "limits": [
+    "The ordinary images show straight stroke-arrows; curved-arrow behavior is tested separately, not visually established here.",
+    "Physical stylus, newer-API pinch, performance superiority and independent adoption are not established.",
+    "Ordinary PNG array bytes were not independently extracted; callback metadata and displayed previews are shown.",
+    "The actual horizontal toolbar is partly offscreen in this viewport; the source screenshots preserve that layout limitation.",
+    "Selected screenshots do not claim an uninterrupted flawless session."
+  ],
+  "video_publication": "pending; no video file is included in this source snapshot"
+}

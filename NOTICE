@@ -1,0 +1,41 @@
+Oritwig Markup module proof — developer research proof, not an accepted app or release.
+
+This module contains source derived from Telegram for Android:
+https://github.com/DrKLO/Telegram
+Pinned commit: f2908b14133bbffbf7ab04f641ecb5bfaf533242
+Telegram is licensed under GNU GPL version 2 or later, as declared by the official
+https://telegram.org/apps page. We select GPL version 3 for this combined module.
+The complete GPL-3.0 text accompanies this source in LICENSE. Original GPL-2.0
+license text is retained at provenance/LICENSE-telegram-GPL2.txt.
+Copyright Telegram contributors. Retained headers identify Nikolai Kudashov,
+2013–2018 (Size and RectOld) and 2013–2020 (DispatchQueue). Headerless Paint
+sources remain attributed to Telegram contributors; no exclusive authorship claimed.
+
+Retained: original Paint Input smoothing/pressure/stroke Arrow, Path/Point,
+Render/RenderState stamp and vertex generation, five original brush/composite/
+blit/undo shaders, Painting FBO composition, compressed Slice region undo,
+UndoStore, RenderView EGL/TextureView, plain TextPaintView/EditTextOutline layout,
+EntityView/EntitiesContainerView/RotationGestureDetector transforms, and original
+LPhotoPaintView plain-text flatten transforms, plus narrow animation/value helpers.
+See provenance/source-ledger.json and provenance/license-review/REVIEW.md.
+
+Resource: paint_radial_brush.webp (256×256), upstream blob
+6788001f9648e6f241b6a50474be5d78786e988a. Its decoded pixels are identical to the
+paint_radial_brush.png introduced by DrKLO in commit
+e313885ac540c31ea02c85122907a5845fc576d2. It is included under Telegram's repository/
+application GPL grant. No separate per-asset license was found; that scope inference
+is documented explicitly rather than inventing a separate resource permission.
+
+Excluded: iq-attributed PAINT_SHAPE_FSH in full and its registration, manual shape
+geometry, shape recognition and shapes.dat, elliptical/neon assets, blur/redaction,
+eraser/fill, rich stickers, animated emoji, Telegram account/protocol/network code,
+all bundled fonts, and the original cursor/service infrastructure.
+No iq or third-party MIT-labelled distance-function copy is distributed.
+
+Platform adaptations use Android system fonts/EditText, caller-supplied Resources,
+Context and per-session cache, main-thread dispatch, Android logging, Java Math.hypot
+in place of ZXing's distance call, and primitive clamp/alpha helpers in place of
+AndroidX calls. No ZXing or AndroidX code/artifact is bundled or linked. All actual
+painting, text/entity geometry, compressed undo and GL readback remain upstream.
+No third-party runtime Maven dependency is declared; Android platform APIs are the
+runtime. Build-tool dependencies (Gradle/AGP) are not bundled in the application.
